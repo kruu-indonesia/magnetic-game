@@ -1,0 +1,13 @@
+# Netlify configuration for SPA routing
+
+[build]
+  # Build command
+  command = "npm run build"
+  # Directory with the build output
+  publish = "dist"
+
+# Redirect all routes to index.html for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
